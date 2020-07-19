@@ -1,4 +1,24 @@
 :root {
-    --main-element-bg-color: #72F0E6;
+    --main-element-bg-color: #26DED8;
     --main-element-font-color: #FFFFFF;
+    --main-element-font-family: 'Varela Round', sans-serif;
+    --label-font-color: #5B5C61;
+    --main-button-color: #FA9458;
+}
+
+.text-input {
+    padding: 5%;
+    border: 1px solid #C7C9D4;
+    border-radius: 3px;
+    margin: 2% 0%;
+}
+
+.main-button {
+    background-color: #FA9458;
+    border: 0px;
+    color: #FFFFFF;
+    padding: 4vw;
+    width: 70%;
+    border-radius: 50vw;
+    text-transform: uppercase;
 }
