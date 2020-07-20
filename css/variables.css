@@ -22,3 +22,16 @@
     border-radius: 50vw;
     text-transform: uppercase;
 }
+
+@media only screen and (min-width: 600px) {
+    .text-input {
+        padding: 4%;
+    }
+    .main-button {
+        padding: 1vw;
+        width: 40%;
+    }
+    .main-button {
+        font-size: 1vw;
+    }
+}
