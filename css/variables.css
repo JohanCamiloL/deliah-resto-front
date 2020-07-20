@@ -1,3 +1,10 @@
+* {
+    border: 0%;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
 :root {
     --main-element-bg-color: #26DED8;
     --main-element-font-color: #FFFFFF;
@@ -6,11 +13,15 @@
     --main-button-color: #FA9458;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 .text-input {
     padding: 5%;
     border: 1px solid #C7C9D4;
     border-radius: 3px;
-    margin: 2% 0%;
+    margin: 2% 0% 5% 0%;
 }
 
 .main-button {
@@ -23,6 +34,24 @@
     text-transform: uppercase;
 }
 
+.form-label {
+    color: var(--label-font-color);
+    font-size: 3vw;
+}
+
+.form-anchor {
+    color: var(--main-button-color);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header {
+    background-color: var(--main-element-bg-color);
+    color: var(--main-element-font-color);
+    font-family: var(--main-element-font-family);
+    font-weight: bold;
+}
+
 @media only screen and (min-width: 600px) {
     .text-input {
         padding: 4%;
@@ -33,5 +62,8 @@
     }
     .main-button {
         font-size: 1vw;
+    }
+    .form-label {
+        font-size: .9vw;
     }
 }
