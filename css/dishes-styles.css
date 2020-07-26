@@ -1,0 +1,99 @@
+@import "./variables.css";
+header {
+    padding: 4% 0%;
+    text-align: center;
+    font-size: 3vw;
+    margin-bottom: 5%;
+    position: sticky;
+    width: 100%;
+    top: 0%;
+    z-index: 1;
+}
+
+#shopping-cart-button {
+    position: absolute;
+    top: 28%;
+    right: 5%;
+    font-size: 6vw;
+}
+
+#dishes-section {
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    margin: 0% 5%;
+}
+
+#dishes-section>p {
+    font-size: 3.5vw;
+    color: var(--label-font-color);
+    font-weight: bold;
+}
+
+#dishes-section>div {
+    min-height: 10vh;
+    max-height: 10vw;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    align-items: center;
+    margin-top: 5%;
+}
+
+#dishes-section .plate-price {
+    color: var(--label-font-color);
+    font-size: 3.5vw;
+    margin-top: 2%;
+}
+
+#dishes-section .food-image {
+    max-width: 100%;
+    height: auto;
+    opacity: 0.8;
+}
+
+#dishes-section>div div {
+    margin-left: 5%;
+}
+
+#dishes-section .add-plate-button {
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    background-color: var(--main-button-color);
+    justify-self: end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-element-font-color);
+}
+
+@media only screen and (min-width: 600px) {
+    header {
+        font-size: 1vw;
+        padding: 2% 1%;
+        text-align: left;
+    }
+    #shopping-cart-button {
+        font-size: 2.5vw;
+    }
+    #dishes-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5%;
+        margin: 0% 20%;
+    }
+    #dishes-section>p {
+        font-size: 1.2vw;
+        grid-column: 1 / 3;
+    }
+    #dishes-section .dish-container img {
+        border-radius: 10px;
+    }
+    #dishes-section .dish-container .add-plate-button {
+        width: 4vw;
+        height: 4vw;
+    }
+    #dishes-section .dish-container .plate-price {
+        font-size: 1vw;
+    }
+}
