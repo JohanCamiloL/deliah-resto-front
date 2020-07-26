@@ -56,8 +56,8 @@ header {
 }
 
 #dishes-section .add-plate-button {
-    width: 70%;
-    height: 70%;
+    width: 12vw;
+    height: 12vw;
     border-radius: 50%;
     background-color: var(--main-button-color);
     justify-self: end;
