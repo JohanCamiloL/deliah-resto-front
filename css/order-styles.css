@@ -1,0 +1,102 @@
+@import "variables.css";
+header {
+    padding: 4% 0%;
+    text-align: center;
+    font-size: 3vw;
+    margin-bottom: 5%;
+    position: sticky;
+    width: 100%;
+    top: 0%;
+    z-index: 1;
+}
+
+#dishes-section {
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    margin: 0% 5%;
+}
+
+#dishes-section>p {
+    font-size: 4vw;
+    color: var(--label-font-color);
+    font-weight: bold;
+}
+
+#dishes-section>div {
+    min-height: 10vh;
+    max-height: 10vw;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    align-items: center;
+    margin-top: 5%;
+}
+
+#dishes-section .plate-price {
+    color: var(--label-font-color);
+    font-size: 3.5vw;
+    margin-top: 2%;
+}
+
+#dishes-section .food-image {
+    max-width: 100%;
+    height: auto;
+    opacity: 0.8;
+}
+
+#dishes-section>div div {
+    margin-left: 5%;
+}
+
+#dishes-section .remove-plate-button {
+    width: 12vw;
+    height: 12vw;
+    border-radius: 50%;
+    border: 2px solid var(--main-element-bg-color);
+    background-color: transparent;
+    justify-self: end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-element-bg-color);
+    font-size: 6vw;
+}
+
+#dishes-section .remove-plate-button:hover {
+    background-color: var(--main-element-bg-color);
+    color: white;
+}
+
+#payment-section {
+    display: flex;
+    flex-direction: column;
+    margin: 0% 5%;
+}
+
+#payment-section>p {
+    font-size: 5vw;
+    margin: 5% 0% 0% 0%;
+}
+
+#payment-section label {
+    display: block;
+    color: var(--label-font-color);
+    font-weight: bold;
+    font-size: 4vw;
+    margin: 10% 0% 2% 0%;
+}
+
+#payment-section input {
+    font-size: 5vw;
+}
+
+#payment-section select {
+    font-size: 5vw;
+    width: 30vw;
+}
+
+#payment-section #payment-order-submit {
+    font-size: 3.5vw;
+    margin-top: 20vw;
+    align-self: center;
+}
