@@ -17,19 +17,25 @@
         <h1>Deliah Resto</h1>
     </header>
     <section>
-        <form action="">
+        <form action="http://localhost:8000/users" method="POST">
             <label for="register-username" class="form-label">Usuario</label>
-            <input id="register-username" class="text-input" type="text" required placeholder="john_doe">
+            <input name="userName" id="register-username" class="text-input" type="text" required
+                placeholder="john_doe">
             <label for="register-fullname" class="form-label">Nombre y apellido</label>
-            <input id="register-fullname" class="text-input" type="text" required placeholder="John Doe">
+            <input name="fullName" id="register-fullname" class="text-input" type="text" required
+                placeholder="John Doe">
             <label for="register-email" class="form-label">Correo electrónico</label>
-            <input id="register-email" class="text-input" type="email" required placeholder="johndoe@mail.com">
+            <input name="email" id="register-email" class="text-input" type="email" required
+                placeholder="johndoe@mail.com">
             <label for="register-phone" class="form-label">Teléfono</label>
-            <input id="register-phone" class="text-input" type="number" required placeholder="+57 3175034059">
+            <input name="phone" id="register-phone" class="text-input" type="number" required
+                placeholder="+57 3175034059">
             <label for="register-address" class="form-label">Dirección de envío</label>
-            <input id="register-address" class="text-input" type="text" required placeholder="Cra 59a #6b - 75">
+            <input name="address" id="register-address" class="text-input" type="text" required
+                placeholder="Cra 59a #6b - 75">
             <label for="register-password" class="form-label">Contraseña</label>
-            <input id="register-password" class="text-input" type="password" required placeholder="Password">
+            <input name="password" id="register-password" class="text-input" type="password" required
+                placeholder="Password">
             <input id="register-submit" class="main-button" type="submit" value="Crear cuenta">
             <a id="register-login" class="form-anchor" href="index.html">Iniciar Sesión</a>
         </form>
