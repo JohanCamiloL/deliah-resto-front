@@ -1,0 +1,93 @@
+@import "variables.css";
+header {
+    display: grid !important;
+    grid-template-columns: 1fr 3fr 2fr;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.8vw;
+    margin: 1vw 0% 1vw 1vw;
+    font-weight: bold !important;
+}
+
+header p {
+    font-weight: 500;
+    font-size: 0.9vw;
+    margin: 0%;
+}
+
+header ul {
+    list-style: none;
+    justify-self: right;
+    width: 100%;
+    margin-bottom: 0%;
+}
+
+header ul li {
+    font-weight: 500;
+    font-size: 0.9vw;
+    display: inline;
+    margin-right: 5%;
+}
+
+header ul li:hover {
+    text-decoration: underline;
+}
+
+header ul #li-button {
+    background-color: white;
+    color: red;
+    padding: 2% 5%;
+    border-radius: 50px;
+    font-size: 0.9vw;
+}
+
+header ul #li-button:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+table {
+    margin-top: 2%;
+    font-size: 0.8vw;
+}
+
+table thead tr th {
+    color: #9EA0A8;
+    font-weight: 500 !important;
+    border-top: 0px !important;
+    border-bottom: 0px !important;
+}
+
+table tbody tr td {
+    vertical-align: middle !important;
+}
+
+.order-status {
+    color: white;
+    border-radius: 2vw;
+    padding: .3vw 5vw .3vw 1vw;
+    font-weight: bold;
+    max-width: 9vw;
+}
+
+.order-status-new-table {
+    background-color: #F04C32;
+}
+
+.order-status-confirmed-table {
+    background-color: orange;
+}
+
+.order-status-preparing-table {
+    background-color: #EBD707;
+}
+
+.order-status-sending-table {
+    background-color: #3CDA87;
+}
+
+.order-status-delivered-table {
+    background-color: #898696;
+}
