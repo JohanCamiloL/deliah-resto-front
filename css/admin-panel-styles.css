@@ -1,0 +1,228 @@
+@import "variables.css";
+header {
+    display: grid !important;
+    grid-template-columns: 1fr 3fr 2fr;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.8vw;
+    margin: 1vw 0% 1vw 1vw;
+    font-weight: bold !important;
+}
+
+header p {
+    font-weight: 500;
+    font-size: 0.9vw;
+    margin: 0%;
+}
+
+header ul {
+    list-style: none;
+    justify-self: right;
+    width: 100%;
+    margin-bottom: 0%;
+}
+
+header ul li {
+    font-weight: 500;
+    font-size: 0.9vw;
+    display: inline;
+    margin-right: 5%;
+}
+
+header ul li:hover {
+    text-decoration: underline;
+}
+
+header ul #li-button {
+    background-color: white;
+    color: red;
+    padding: 2% 5%;
+    border-radius: 50px;
+    font-size: 0.9vw;
+}
+
+header ul #li-button:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+table {
+    margin-top: 2%;
+    font-size: 0.8vw;
+}
+
+table thead tr th {
+    color: #9EA0A8;
+    font-weight: 500 !important;
+    border-top: 0px !important;
+    border-bottom: 0px !important;
+}
+
+table tbody tr td {
+    vertical-align: middle !important;
+}
+
+table tbody tr td i:hover {
+    cursor: pointer;
+}
+
+.order-status {
+    color: white;
+    border-radius: 2vw;
+    padding: .3vw 5vw .3vw 1vw;
+    font-weight: bold;
+    max-width: 9vw;
+}
+
+.order-status-new-table {
+    background-color: #F04C32;
+}
+
+.order-status-confirmed-table {
+    background-color: orange;
+}
+
+.order-status-preparing-table {
+    background-color: #EBD707;
+}
+
+.order-status-sending-table {
+    background-color: #3CDA87;
+}
+
+.order-status-delivered-table {
+    background-color: #898696;
+}
+
+.order-status:hover~.order-time-table {
+    background-color: green;
+}
+
+#order-detail {
+    width: 40%;
+    height: 95vh;
+    background-color: white;
+    z-index: 1;
+    position: absolute;
+    top: 0%;
+    right: -40%;
+    display: none;
+}
+
+#order-detail-header {
+    display: flex;
+    width: 100%;
+    background-color: var(--main-element-bg-color);
+    align-items: center;
+}
+
+#order-detail-header h1 {
+    font-size: 1vw;
+    padding: 1.45vw 0% 1.45vw 1vw;
+    font-weight: bold !important;
+    color: #FFFFFF;
+    margin-bottom: 0% !important;
+}
+
+#order-detail-header i {
+    color: #FFFFFF !important;
+    height: 15%;
+    position: relative;
+    right: -68%;
+}
+
+#order-detail-header i:hover {
+    cursor: pointer;
+}
+
+#order-detail-status {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+}
+
+#order-detail-dishes {
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+.element-title {
+    color: #9EA0A8;
+    font-weight: 600;
+    margin-bottom: 0%;
+}
+
+#order-detail-status button {
+    margin-bottom: 1%;
+    font-size: .7vw;
+}
+
+#order-detail-buttons {
+    display: flex;
+    padding-left: 5%;
+}
+
+#order-detail-buttons button {
+    font-size: 0.8vw;
+    width: 30%;
+    padding: 0.5vw;
+    margin-right: 2%;
+}
+
+#cancel-order {
+    border: 1.5px solid #FA9458;
+    color: #FA9458;
+    background-color: white;
+}
+
+#order-detail-dishes>div {
+    display: flex;
+}
+
+#order-detail-dishes img {
+    width: 10%;
+    height: 10%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+
+#order-detail-dishes div p {
+    margin-bottom: 0%;
+}
+
+#order-detail-detail {
+    margin-left: 5%;
+}
+
+#order-detail-detail div div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.order-detail-animation-show {
+    animation: show-order-detail 1s forwards;
+}
+
+.order-detail-animation-hide {
+    animation: hide-order-detail 1s forwards;
+}
+
+@keyframes show-order-detail {
+    0% {
+        right: -40%;
+    }
+    100% {
+        right: 0%;
+    }
+}
+
+@keyframes hide-order-detail {
+    0% {
+        right: 0%;
+    }
+    100% {
+        right: -40%;
+    }
+}
